@@ -2,7 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/optimal-decision-making/index.html",
+      "/posts/implementing-the-perceptron-alg/index.html",
+      "/posts/women-in-data-science/index.html",
       "/posts/new-test-post/index.html",
+      "/posts/classifying-palmer-penguins/index.html",
       "/posts/example-blog-post/index.html"
     ]
   }

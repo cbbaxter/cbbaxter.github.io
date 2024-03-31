@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Caitlin Baxter">
+<meta name="dcterms.date" content="2023-03-10">
 
-<title>My Awesome CSCI 0451 Blog</title>
+<title>My Awesome CSCI 0451 Blog - The Women in Data Science (WiDS) Conference at Middlebury College</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -111,52 +82,23 @@ ul.task-list li input[type="checkbox"] {
 
       .quarto-title-block .quarto-title-banner {
         color: white;
-background-image: url(img/landscape.png);
+background-image: url(../../img/landscape.png);
 background-size: cover;
       }
 </style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">My Awesome CSCI 0451 Blog</span>
     </a>
   </div>
@@ -167,7 +109,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -190,212 +132,70 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Awesome CSCI 0451 Blog</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">The Women in Data Science (WiDS) Conference at Middlebury College</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Caitlin Baxter </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 10, 2023</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><strong>Abstract</strong></p>
+<p>On March 4, 2024 I attended Middlebury College’s Women in Data Science Conference that aimed to highlight the work of women using data across different disciplines. Part A of this blogpost uses Corbett and Hill’s report “Solving the Equation: The Variables for Women’s Sucess in Engineering and Computing” to discuss the issues facing female representation in the fields of Engineering and Computing and how events that spotlight women can have a hugely positive effect on breaking down biases and building community. In Part B, I reflect on the conference itself, discsussing the different lightning presentations by Middlebury professors and the keynote speaker, Sarah Brown.</p>
+<section id="part-a-why-spotlight-women-in-data-science" class="level1">
+<h1>Part A: Why Spotlight Women in Data Science?</h1>
+<p><strong>Why is it a problem that women are underrepresented in computing, math, and engineering? For whom is it a problem?</strong></p>
+<p>The underrepresentation of women in computing, math, and engineering is not only a problem for many women in those fields, but also contributes to larger societal injustices and problems. Diversity in the workforce not only contributes to creativity, productivity, and innovation, but by excluding approximately half of the population from engineering and technical decisions societal inequalities are often perpetuated. This winter, I began reading a book called <em>Invisible Women: Data Bias in a World Designed for Men</em> by Caroline Criado-Perez that discussed the disparity in the data that has led to many of accepted societal designs and standards. In it, they include a quote from Simone de Beauvoir’s <em>The Second Sex</em>, that states “Representation of the world, like the world itself, is the work of men; they describe it from their own point of view, which they confuse with the absolute truth”. This idea is highlighted throughout Corbett and Hill’s discussion of the negative impact of the lack of representation of women in engineering and computing fields in their report “Solving the Equation: The Variables for Women’s Success in Engineering and Computing”. The lack of representation also makes it more difficult for women who are entering the field. With a lack of role models or representation in high power positions, it can be difficult for women to feel confident or like they belong in computing or engineering fields. This in-turn continues to propagate and negatively reinforce the issues surrounding the underrepresentation in the first place.</p>
+<p><strong>How is the representation and status of women in computing today different from the 1950s and 1960s? What are some of the forces that brought this change?</strong></p>
+<p>Since the 1950s and 60s women have made substantial advances in many STEM fields, making up 39% of chemists in 2013 as opposed to 8% in 1960. In Computing fields however, women make up just over a quarter of the workforce which is approximately the same as it was in 1960. Only 12% of engineers are women, which is a substantial increase from the 1% in 1960, yet still remains a strikingly small percentage. An important way to facilitate the increase of female representation is by changing the environment. Corbett and Hill discuss how Harvey Mudd College was able to increase the percentage of women graduating from its computing program from 12% to 40% in 5 years by making three changes that made their courses a more welcoming and accessible environment for female computer scientists. Recognizing that the problem not only lies with attracting women to a program, but also keeping them invested and involved, is another essential element of representation.</p>
+<p><strong>Which of the barriers and unequal challenges described in the section “Why So Few” can be eroded by events that spotlight the achievements of women in STEM?</strong></p>
+<p>A large barrier for women in Computing fields is the lack of a perceived community, both in their role, which is stereotypically often perceived as very solitary, and as an underrepresented group of people. Women are more likely than men to express an interest in work with a clear social purpose and as Corbett and Hill write, “Incorporating communal aspects - both in messaging and substance - into engineering and computing work will likely increase the appeal of these fields to communally oriented people, many of whom are women.” Events that highlight the success of women also help cultivate a sense of belonging which is essential for a field or workplace when trying to attract and retain diversity. Through events that spotlight the achievements of women, we are able to also help erode implicit gender biases and stereotypes. Corbett and Hill discuss how exposing students to female role models early in life might be able to change the implicit biases between math capabilities and gender.</p>
+</section>
+<section id="part-b-middlebury-women-in-data-science-conference" class="level1">
+<h1>Part B: Middlebury Women in Data Science Conference</h1>
+<p>Middlebury professor Amy Yuen presented on ‘Is the UN Security Council a Democratic Institution?’ and discussed how she has used data in her research on the UN’s security council and how the status of different members effect the resolutions and types of meetings the council holds. The UN Security council is comprised of 15 members, with 5 permanent members who hold veto power, and 10 elected members that serve 2-year terms. In measuring the different resolutions and meetings brought forward by the permanent members versus the elected members, Professor Yuen looked to access how the different elected members affect the council. They found differences in sponsorship of resolutions, determining that permanent members often put out the most resolutions that relate to current events while elected members focus on more thematic issues such as climate change. They found that the actual line of best fit of their data fit closer to their modelled ‘most inclusive cycle’ which suggests that while the Security Council is definitely not democratic in the way we often think of it, it is fairly representative of the world scene and engages more states than people would imagine. I learned a lot about how the UN Security Council functions from this presentation and also a fun example of how data is used outside of Computer Science research. One thing that I found interesting was the challenges of aquiring data. Professor Yuen discussed how even though all of this data is public record and has been well-documented, the data provided by the UN was at times incorrect and had to be re-checked by her research assistants.</p>
+<p>Geography professor Dr.&nbsp;Jessica L’Roe presented on her research on deforestation. She showed us several of her projects, and discussed how she and her research assitance both collected data and analyzed it. One of the first examples she discussed was in Brazil, where while the government was very good at detecting deforestation, they found it difficult to actually identify who was responsible for clearing land. The government created a new initiative that had people register their land, but the self-reports provided by people were often incorrect as people would lie about the size of their land. So while they have a lot of data from aerial observation and statistics, a lot of their research relies on interviewing other people. She echoed this in another example of her research in Uganda. I found her discussion of how interviewing of locals provided them with essential information in wildlife and woodlots conservation. I think that sometimes in Computer Science and Statistics data can feel really impersonal and it was nice to bring the discussion back to the people who are the basis of and are greatly affected by models.</p>
+<p>Finally, Professor Laura Biester presented on her research using Computation Linguistic Models to study Mental Health issues. Research into mental health involves the fundamental challenge of access to quality data due to the privacy protections in place for health data, so many researchers rely on self-reports where an individual has posted on the internet about their diagnosis. Typically, models built on self-report datasets do not generalize as well, so Professor Biester and her colleagues turned to Reddit. Looking at over 360 JSON files with all of the Redditposts and comments from 2006-2019, they developed a dataset with 20k diagnosed users and controls then used Bidirectional Encoder Representations from Transformers (BERT) to extract contextual representations of words that were associated with the lead-up to a depression diagnosis. I learned a lot about how these large language model studies are conducted through Professor Biester’s presentation. I found her discussion on the limitations of Reddit data as it includes very little demographic information about the individuals to be interesting, and made me wonder at how the results might vary if we had information about the gender of the user. How would the terminology vary for a female identifying, or non-binary individual? I found Professor Biester’s discussion on how she uses huge amounts of data to investigate language to be very interesting and informative.</p>
+<p>Professor Sarah Brown, from the University of Rhode Island, was the main keynote speaker of the event. She presented on ‘Data Science Skills in Unexpected Places’ and discussed different non-technical skills that she has aquired over the years that help her solve data science problems and overcome roadblocks when faced with an issue. One of her main points that I found particularly interesting was her discussion of data as a primary source that needs to be assessed within its context in order to be properly understood. She began her presentation by showing a three circled-venn diagram that had ‘Computer Science’, ‘Domain Experts’, and ‘Statistics’ in each circle, with the overlapping section highlighted as ‘Data Science’. She discussed how each discipline is not simply a topic, but rather a community full of people, norms, and vocabularies that need to be understood in order to properly analyze its data.</p>
+<p>Professor Brown also discussed the question of accuracy versus fairness, suggesting a change from the traditional data pipeline to incorporate the question of fairness into the earlier stages when one is exploring the data and variables:</p>
+<p>collect -&gt; clean -&gt; explore -&gt; fair? -&gt; model -&gt; deploy</p>
+<p>She discussed an example in healthcare where by changing the target variable of the model, they were able to make it more equitable. Computer Science is a novice field with disproportionate power, which can lead to chaos. By incorporating discussions of fairness and auditing our models into our processes we are able to work on addressing bias in models as we are going instead of realizing after deployment that it is behaving problematically. One thing that I found particularily impactful was when Professor Brown stated how we can have an incredible accurate algorithm that is biased, because the world is biased and therefore the data generated by the world is biased.</p>
+<p><strong>Reflection</strong></p>
+<p>As I was scrolling through Instagram the other day I came across a commercial that was made by Mercedes-Benz for International Women’s Day in 2023. The video is narrated by a few young girls and the overall premise is that they are not interested in being ‘exceptional’ because they are the first woman to do something, they would rather be one of many. I think that messaging really highlights what I have been reflecting on throughout this blogpost - how the underrepresentation of women in Computing and Engineering fields can feel like a self-perpetuating cycle, and that by highlighting and empowering successful women in these fields we are able to build representation and community. I had a great time at Middlebury’s Women in Data Science conference and felt that I both learned a lot, and also got to meet a lot of other students through their ‘Get to know you bingo activity’ and left happily with a midd data tshirt.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1680062400000" data-listing-file-modified-sort="1709252105894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/optimal-decision-making/index.html" class="no-external"></a></p><a href="./posts/optimal-decision-making/index.html" class="no-external">
-<p><img src="./posts/optimal-decision-making" class="thumbnail-image"></p>
-</a><p><a href="./posts/optimal-decision-making/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/optimal-decision-making/index.html" class="no-external">Optimal Decision Making</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/optimal-decision-making/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/optimal-decision-making/index.html" class="no-external">Classifying Adelie, Gentoo, and Chinstrap Penguins.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/optimal-decision-making/index.html" class="no-external">
-<div class="listing-date">
-Mar 29, 2023
-</div>
-<div class="listing-author">
-Caitlin Baxter
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1679716800000" data-listing-file-modified-sort="1711738267637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external"></a></p><a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/implementing-the-perceptron-alg/index_files/figure-html/cell-3-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external">Implementing the Perceptron Algorithm</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external">Implementing the perceptron alg</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/implementing-the-perceptron-alg/index.html" class="no-external">
-<div class="listing-date">
-Mar 25, 2023
-</div>
-<div class="listing-author">
-Caitlin Baxter
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1678424400000" data-listing-file-modified-sort="1711916286489" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1889">
-<div class="thumbnail">
-<p><a href="./posts/women-in-data-science/index.html" class="no-external"></a></p><a href="./posts/women-in-data-science/index.html" class="no-external">
-<p><img src="./posts/women-in-data-science" class="thumbnail-image"></p>
-</a><p><a href="./posts/women-in-data-science/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/women-in-data-science/index.html" class="no-external">The Women in Data Science (WiDS) Conference at Middlebury College</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/women-in-data-science/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/women-in-data-science/index.html" class="no-external"><strong>Abstract</strong></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/women-in-data-science/index.html" class="no-external">
-<div class="listing-date">
-Mar 10, 2023
-</div>
-<div class="listing-author">
-Caitlin Baxter
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1678424400000" data-listing-file-modified-sort="1707833075453" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="441">
-<div class="thumbnail">
-<p><a href="./posts/new-test-post/index.html" class="no-external"></a></p><a href="./posts/new-test-post/index.html" class="no-external">
-<p><img src="./posts/new-test-post/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/new-test-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/new-test-post/index.html" class="no-external">Second Post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/new-test-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/new-test-post/index.html" class="no-external">A new blog post that I just made!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/new-test-post/index.html" class="no-external">
-<div class="listing-date">
-Mar 10, 2023
-</div>
-<div class="listing-author">
-Phil Chodrow
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1677128400000" data-listing-file-modified-sort="1710096305128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767">
-<div class="thumbnail">
-<p><a href="./posts/classifying-palmer-penguins/index.html" class="no-external"></a></p><a href="./posts/classifying-palmer-penguins/index.html" class="no-external">
-<p><img src="./posts/classifying-palmer-penguins/adelie.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/classifying-palmer-penguins/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/classifying-palmer-penguins/index.html" class="no-external">Classifying Palmer Penguins</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/classifying-palmer-penguins/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/classifying-palmer-penguins/index.html" class="no-external">Classifying Adelie, Gentoo, and Chinstrap Penguins.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/classifying-palmer-penguins/index.html" class="no-external">
-<div class="listing-date">
-Feb 23, 2023
-</div>
-<div class="listing-author">
-Caitlin Baxter
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1673326800000" data-listing-file-modified-sort="1707833075453" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="441">
-<div class="thumbnail">
-<p><a href="./posts/example-blog-post/index.html" class="no-external"></a></p><a href="./posts/example-blog-post/index.html" class="no-external">
-<p><img src="./posts/example-blog-post/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/example-blog-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/example-blog-post/index.html" class="no-external">Hello Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/example-blog-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/example-blog-post/index.html" class="no-external">An example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/example-blog-post/index.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2023
-</div>
-<div class="listing-author">
-Phil Chodrow
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
