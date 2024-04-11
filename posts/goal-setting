@@ -1,0 +1,108 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# CSCI 0451: Reflective Goal-Setting\n",
+    "\n",
+    "Caitlin Baxter"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## What You'll Learn\n",
+    "\n",
+    "*The knowledge we'll develop in CSCI 0451 can be broadly divided into four main areas:*\n",
+    "\n",
+    "- ***Theory***: *mathematical descriptions of frameworks and algorithms.*\n",
+    "- ***Implementation***: *effective coding and use of tools in order to implement efficient machine learning algorithms.*\n",
+    "- ***Experimentation***: *performing experiments to assess the performance of algorithms and clearly communicating about the results.*\n",
+    "- ***Social responsibility***: *critical analysis of sources of bias and harm in machine learning algorithms; theoretical formulations of fairness and bias*\n",
+    "\n",
+    "*Every student should grow toward each of these areas, but you can choose to specialize if you'd like! If there are one or two of these categories on which you'd especially like to focus, list them below. Feel free to include any details that you'd like -- this can help me tailor the course content to your interests.*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Two of these areas that I am especially interested in learning about are the Implementation and the Social responsibility aspects of the course. I am very interested in the social responsibility element of the course. I took CS701 last semester and really enjoyed the introduction to the ethical questions surrounding technology. I would like to learn more about the steps I can take as a computer scientist to reduce sources of bias and harm in machine learning algorithms. In terms of implementation, I would like to be able to understand when to use different types of machine learning algorithms, and how to effectively implement them. I would also like to learn more about the questions to ask before implementation and the tests that can be run to ensure that a machine learning algorithm is implemented in a socially responsible way. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## What You'll Achieve\n",
+    "\n",
+    "### Blog Posts\n",
+    "\n",
+    "*Most blog posts will require around 5-8 hours on average to complete, plus time for revisions in response to feedback. Blog posts will most frequently involve a mix of mathematical problem-solving, coding, experimentation, and written discussion. Some blog posts will ask you to critically discuss recent readings in an essay-like format.*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "I would like to submit a first draft of all of the blog posts I chose to do within 48 hours of the best-by date. I have assignments due due each week for other classes on Wednesday and Friday mornings, but want to make sure I am staying up-to-date with the assignments and submit the blog posts by the end of the week they are best-by to make sure that I am staying on top of the course material. I would like to do 2 blog posts for each of the course learning objectives: theory, implementation, experimentation, and social responsibility. I also aim to revise all of my blog posts to 'Meets Expectations' and have with two of them in the 'Excellent' status. I would also like to use blog posts as a way to reflect my learning outside of class as well. I would like to propose and complete an additional blog post on a topic related to algorithmic bias and social responsibility or an interesting way machine learning is being used to solve a problem that I am interested in. Ultimately, my goal for the blog posts is to have a place that reflects my learning over the course of the semester, and that I feel all of my blog posts reflect my level of understanding of the course content."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Course Presence (Participation)\n",
+    "\n",
+    "*You make a choice each day about how to show up for class: whether you'll be prepared, whether you'll engage with me and your peers in a constructive manner; and whether you'll be active during lecture and discussions.*\n",
+    "\n",
+    "*An especially important form of course presence is the daily warmup. We'll spend the first 10-15 minutes of most class periods on warmup activities. You're expected to have prepared the warmup activity ahead of time (this means you'll need to have completed the readings as well). Each time, we'll sort into groups of 5-6 students, and one of you (randomly selected) will be responsible for presenting the activity on the whiteboard. If you're not feeling prepared to present the activity, you can \"pass\" to the next person, or ask for help along the way.*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In terms of class attendence, I hope to attend almost every class. Ideally, I aim to only miss class when I am sick or physically incabable of attending. I would like come prepared to present the daily warm-up exercise every class, or at least have made a strong attempt that allows me to ask informed questions of my peers. I would like to participate in a study group outside of class, and work with classmates towards solutions. I find that I am someone who really learns best when I am working with someone else and can bounce ideas off of them and know that explaining things to other people is one of the best ways for me to solidify information. I also aim to keep up to date with current events surrounding technology to make sure that I am aware of the current social and ethical concerns surrounding machine learning. Success in course presence for me basically centres around knowing that I am happy with the amount of effort I have put into the course, and that I have contributed to the overall class dynamic by being a good peer both in class and outside."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Project \n",
+    "\n",
+    "*To finish off the course, you'll complete a long-term project that showcases your interests and skills. You'll be free to propose and pursue a topic. My expectation is that most projects will move significantly beyond the content covered in class in some way: you might implement a new algorithm, study a complex data set in depth, or conduct a series of experiments related to assessing algorithmic bias in a certain class of algorithm. You'll be expected to complete this project in small groups (of your choosing), and update us at a few milestones along the way.*\n",
+    "\n",
+    "*Please share a bit about what kind of topic might excite you, and set a few goals about how you plan to show up as a constructive team-member and co-inquirer (see the [ideas](ideas.qmd) for some inspiration*). "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "While I am not sure exactly what I want to focus on for the final topic, I find the idea of exploring a complex data set in depth or assessing algorithmic bias in a certain class of algorithm to be exciting. My goal for the project is that I select something challenging but fulfilling and that it is a topic I am excited by. I aim to submit all project milestones on time to ensure that I am staying up-to-date and not falling behind. I would like to communicate with my group in a clear and efficient manner, and set regularly scheduled time to meet and work on it as a group. I hope that by meeting with my group regularly, we will be able to divide the tasks in an equal way so as to make sure we all get a lot out of the project, and that too much work does not fall on a single person. I also think that when working on a group project, it is important to set aside time where we can help each other with any problems that we are facing, so I hope to help create an environment where we are comfortable going to each other with questions or to talk things through. "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "ml-0451",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.9.18"
+  },
+  "vscode": {
+   "interpreter": {
+    "hash": "debe06cc0f9553f110b64dc3926c05df82dae2145b852c8422b9c04315589dcb"
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
