@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/replication-study/index.html",
       "/posts/optimal-decision-making/index.html",
+      "/posts/implementing-logistic-regression/index.html",
       "/posts/implementing-the-perceptron-alg/index.html",
       "/posts/women-in-data-science/index.html",
       "/posts/new-test-post/index.html",
