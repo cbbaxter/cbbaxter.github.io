@@ -4,6 +4,7 @@ class LinearModel:
 
     def __init__(self):
         self.w = None 
+        self.w_prev = None
 
     def score(self, X):
         """
@@ -23,11 +24,8 @@ class LinearModel:
         """
         if self.w is None: 
             self.w = torch.rand((X.size()[1]))
-        # your computation here: compute the vector of scores s
-        # s = w1 x (loan interest rate) + w2 x (load percent income)
-        # return X@self.w <- also works
     
-        return X@self.w.T
+        return torch.matmul(X, self.w)
 
     def predict(self, X):
         """
@@ -48,23 +46,88 @@ class LinearModel:
         return torch.where(S > 0, 1.0, 0.0)
     
 class LogisticRegression(LinearModel):
-    def sigmoid(x):
-        return 1.0 / (1.0 + torch.exp(-x))
+
+    def sigmoid(self, s):
+        """
+        Computes the sigmoid function on s
+
+        ARGUMENTS:
+            s, torch.Tensor: a feature matrix of size (n, p) where n is the number of data points
+            and p is the number of features.
+            
+        """
+        return 1.0 / (1.0 + torch.exp(-s))
         
     def loss(self, X, y):
-        score = LinearModel.score(X)
-        n = X.size()[0]
-        loss = (1/n) * torch.einsum(self.littleLoss(y, score))
-        return loss
+        """
+        Compute the misclassification rate. 
+
+        ARGUMENTS:
+            X, torch.Tensor: a feature matrix of size (n, p) where n is the number of data points
+            and p is the number of features.
+
+            y, torch.Tensor: the target vector. size (n, ), values are either {0, 1}
+        
+        RETURNS:
+            L(w), torch.Tensor. size (1), The results of the logistic loss function, from Professor Chodrows notes: https://middlebury-csci-0451.github.io/CSCI-0451-s24/assignments/blog-posts/blog-post-optimization.html#implement-linearmodel-and-logisticregression
+        """
+        s = self.score(X)
+        sig_s = self.sigmoid(s)
+        loss = torch.negative(y) * torch.log(sig_s) - ((1 - y) * torch.log(1 - sig_s))
+        return torch.mean(loss)
     
-    def litteLoss(self, y, s):
-        loss = -y * torch.log(self.sigmoid(s)) - (1 - y) * torch.log(1 - self.sigmoid(s));
-        return loss
 
     def grad(self, X, y):
-        n = X.size()[0]
-        grad = (1/n) * torch.einsum((self.sigmoid(self.score(X)) - y) * X)
-        return grad   
+        """
+        Compute the gradient of the empirical risk L(w). 
 
+        ARGUMENTS:
+            X, torch.Tensor: a feature matrix of size (n, p) where n is the number of data points
+            and p is the number of features.
+
+            y, torch.Tensor: the target vector. size (n, ), values are either {0, 1}
+        
+        RETURNS:
+            grad(L(w)): the Empirical Risk, based on equation 9.5 in Professor Chodrow's notes: https://www.philchodrow.prof/ml-notes/chapters/23-gradient-descent.html#gradient-of-the-empirical-risk
+        
+        """
+        s = self.score(X)
+        grad =  X * (self.sigmoid(s) - y).unsqueeze(1) 
+        grad_T = torch.transpose(grad, 0, 1)
+        return torch.mean(grad_T, 1) 
+
+class GradientDescentOptimizer(LogisticRegression):
+    def __init__(self, model):
+        self.model = model 
+        
+
+    def step(self, X, y, alpha, beta):
+        """
+        Compute one step of the logistic regression update using the feature matrix X 
+        and target vector y in terms of alpha, the learning rate and beta, the momentum. 
+
+        ARGUMENTS:
+            X, torch.Tensor: a feature matrix of size (n, p) where n is the number of data points
+            and p is the number of features. 
+
+            y, torch.Tensor: the target vector. size (n, ), values are either {0, 1}
+
+            alpha, float: the learning rate
+
+            beta, float: the momentum
+
+        RETURNS:
+            L(w), torch.Tensor: size (1), the empirical loss of the function at that step
+        
+        """
+        if self.model.w_prev == None:
+            self.model.w_prev = torch.rand((X.size()[1]))
+
+        grad = self.model.grad(X, y)
+        w_step = self.model.w - (alpha * grad) + (beta * (self.model.w - self.model.w_prev))
+        self.model.w_prev = self.model.w
+        self.model.w = w_step
+
+        return self.model.loss(X, y)
 
 
