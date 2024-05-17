@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/voice-emotion-classification/index.html",
       "/posts/newtons-method/index.html",
       "/posts/implementing-the-perceptron-alg/index.html",
       "/posts/optimal-decision-making/index.html",
